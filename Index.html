@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Encriptado Y Desencriptado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Specifies a header for a document or section -->
+        <img src="imagenes/Logo.svg" alt="alura logo" class="alura-logo">
+        <h1 class="title">Bienvenido a Enigma Web!</h1>
+    </header>
+
+    <main>
+         <!-- Text to encrypt goes here ↓ -->
+         <div class="text-encrypt">
+             <section>
+                 <small class="text-allowed"><span>🛈</span>Solo letras minúsculas y sin acentos</small>
+                 <br>
+                 <textarea name="textToEncrypt" rows="5" cols="50" id="input-text"
+                 placeholder="Ingrese el texto que desea encriptar aquí"></textarea>
+             </section>
+             <section id="btn-box">
+                 <button type="button" class="btn-encrypt" value="encrypt" onclick="encryptBtn(),imgDisplayOff()">Encriptar</button>
+                            
+                 <button type="button" class="btn-decrypt" value="decrypt" onclick="decryptBtn(),imgDisplayOff()" >Desencriptar</button>
+             </section>
+         </div>
+        <!-- encrypted-decrypted text is displayed here ↓ -->
+        <aside class="text-decrypt">
+            <br>
+            <textarea id="output-text" rows="5" cols="50" placeholder="Resultado" readonly>
+            </textarea>
+
+            <div>
+                <img src="imagenes/Muñeco.svg" alt="Joven con una lupa" id="lateral-img">
+            </div>
+
+            <button type="button" class="btn-copy" onclick="copyBtn(),imgDisplayOn()">Copiar</button>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <small class="center">Copyright © 2022 - Franco Malgarise</small>
+    </footer>
+
+    <!-- Lo mejor siempre es colocar los "scripts" antes del cierre de "body" y después de todo tu contenido HTML div, a, span, etc, debido a que por lo general haces llamado a los elementos por ID o Clase y deben estar cargados antes de comenzar a ejecutarse -->
+    <script src="JS/encrypt.js"></script>
+    <script src="JS/decrypt.js"></script>
+    <script src="JS/copy.js"></script>
+    <script src="JS/clear_Img.js"></script>
+</body>
+</html>

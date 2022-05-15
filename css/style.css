@@ -1,0 +1,125 @@
+body{
+    background: #F3F5FC; /* Light blue/light-blue-100 */
+}
+
+header{
+    display:flex;
+    background: linear-gradient(to bottom, #3A2D80, #6957E7);
+}
+
+.alura-logo{
+    position: static;
+    width: 70px;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    
+    flex: none;
+    flex-grow: 0;
+    margin: 20px 0px;
+}
+
+.title{
+    padding-top: 8px;
+    text-align: center;
+    font: 3em 'VT323', monospace;
+    margin: 0 20% 0 20%;
+    color: #FFFFFF;
+
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #A763F6;
+}
+
+
+#input-text{
+    width: 500px;
+    height:250px;
+    left: 40px;
+    top: 90px;
+    
+    font-family: 'VT323', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 150%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    
+    color: #0A3871;
+}
+
+#output-text{
+    width: 300px;
+    height:250px;
+    right: 40px;
+    top: 90px;
+    
+    font-family: 'VT323', monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 150%;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+
+    color: #0A3871;
+    z-index: 1;
+}
+
+#lateral-img{
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    left: 695px;
+
+    width: 250px;
+    height: auto;
+}
+
+section.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    font-family: 'VT323', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    width: 200px;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    background-color: #6957E7;
+    box-shadow: #3A2D80 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow 200ms;
+    
+}
+
+button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #3A2D80 0px 0px 0px;
+}
+
+.btn-copy{
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background: linear-gradient(to bottom, #6957E7, #3A2D80);
+    color: white;
+}
